@@ -2,6 +2,10 @@
 
 var celleUtente = parseInt(prompt("Di quante celle vuoi che sia il campo ?"));
 
+while(isNaN(celleUtente) || celleUtente < 1) {
+    celleUtente = parseInt(prompt("ERRORE! Hai inserito una parola o un numero inferiore a 1. Di quante celle vuoi che sia il campo ?"));
+}
+
 //Tramite una funzione javascript disegnare in pagina la griglia con massimo 10 celle per riga.
 
 for (var i = 1; i <= celleUtente; i++) {
