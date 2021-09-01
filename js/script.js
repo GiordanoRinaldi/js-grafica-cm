@@ -8,8 +8,14 @@ for (var i = 1; i <= celleUtente; i++) {
     document.getElementById("container").innerHTML += `<div class="quadrato">${i}</div>`;
 }
 
-
 //Al click su una cella dovrà essere mostrato con un alert il numero della cella e il suo background diventerà rosso.
+
+document.getElementById("container").addEventListener("click", 
+    function(event) {
+        event.target.classList.toggle("rosso");
+        alert(event.target.innerHTML);
+    }
+);
 
 
 
