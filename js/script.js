@@ -7,10 +7,14 @@ while(isNaN(celleUtente) || celleUtente < 1) {
 }
 
 //Tramite una funzione javascript disegnare in pagina la griglia con massimo 10 celle per riga.
-
-for (var i = 1; i <= celleUtente; i++) {
+function creaCampo(nCelle) {
+    for (var i = 1; i <= nCelle; i++) {
     document.getElementById("container").innerHTML += `<div class="quadrato">${i}</div>`;
+    }    
 }
+
+creaCampo(celleUtente);
+
 
 //Al click su una cella dovrà essere mostrato con un alert il numero della cella e il suo background diventerà rosso.
 
